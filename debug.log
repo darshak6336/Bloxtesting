@@ -1,0 +1,8 @@
+[1205/165122:ERROR:scoped_process_suspend.cc(30)] NtSuspendProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[1205/165124:ERROR:process_info.cc(103)] ReadProcessMemory bool __cdecl crashpad::`anonymous-namespace'::ReadStruct<struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits32>>(void *,unsigned __int64,struct crashpad::process_types::PEB<struct crashpad::process_types::internal::Traits32> *): Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[1205/165124:ERROR:process_info.cc(542)] ReadProcessData failed
+[1205/165124:ERROR:process_reader_win.cc(233)] ReadMemory at 0x9a1bfc of 12 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[1205/165124:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
+[1205/165124:WARNING:crash_report_exception_handler.cc(56)] ProcessSnapshotWin::Initialize failed
+[0118/173924:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0118/173924:ERROR:node_debugger.cc(86)] Cannot start debugger server

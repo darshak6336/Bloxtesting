@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>Sign-in, Then Tabs Example</title>
+
+    <ion-view title="SignUp" class="screen-bg">
+
+        <ion-scroll direction="y" class="theroot">
+
+
+            <div class="images" style="text-align:center; margin-bottom:25px; margin-top:15%;"><img src="img/logo.png"></div>
+            <form class="form" name="registerForm" novalidate>
+
+                <span class="input-label">First name*</span>
+                <input type="text" name="firstName" placeholder="" ng-blur="visitedFirstName = true" ng-model="user.firstName" ng-minlength="1" required></label>
+                <!-- <p class="error">Enter First Name</p> -->
+                <p ng-show="registerForm.firstName.$error.required && visitedFirstName" class="error">Invalid firstName </p>
+
+                <span class="input-label">Last name*</span>
+                <input type="text" name="lastName" placeholder="" ng-blur="visitedLastName = true" ng-model="user.lastName" ng-minlength="1" required></label>
+                <!-- <p class="error">Enter Last Name</p> -->
+
+                <span class="input-label">Email*</span>
+                <input type="email" name="email" placeholder="" ng-blur="visitedEmail = true" ng-model="user.email" ng-minlength="5" required></label>
+                <p ng-show="registerForm.email.$invalid && visitedEmail" class="error">Invalid Email Adress</p>
+
+                <span class="input-label">Re-enter Email*</span>
+                <input type="email" placeholder="" name="rEmail" ng-blur="visitedrEmail = true" ng-model="user.rEmail" ng-minlength="5" required></label>
+                <p ng-show="registerForm.email.$invalid && visitedrEmail" class="error">Invalid Email Adress</p>
+
+
+                <span class="input-label">Password*</span>
+                <input type="password" ng-blur="visitedPassword = true" placeholder="" name="password" ng-model="user.password" ng-minlength="6" required></label>
+                <!-- <p class="error">Incorrect Password</p> -->
+
+
+                <!-- <div class="padding" ng-show="visitedEmail">
+                    <p ng-show="registerForm.email.$error.required">* e-mail is required</p>
+                    <p ng-show="registerForm.email.$invalid">* e-mail must be an email address</p>
+                    <p ng-show="registerForm.email.$error.minlength">* e-mail must be longer than 5 characters</p>
+                 </div> -->
+                <div class="padding" ng-show="visitedPassword">
+                    <p ng-show="registerForm.password.$error.required">* Password is required</p>
+                    <p ng-show="registerForm.password.$error.minlength">* Password must be longer than 6 characters</p>
+                </div>
+                <div class="padding" ng-show="error">
+                    <p>{{errorMsg}}</p>
+
+                </div>
+
+
+
+                <button ion-ripple nav-clear class="button button-block button-positive" ng-disabled="registerForm.$invalid" ng-click="signup(user)">
+           Create an Account
+          </button>
+
+
+                <p class="" style="text-align:center;"> <a ui-sref="login" style="text-decoration:none;">Login<br></a></p>
+
+
+            </form>
+
+
+
+
+        </ion-scroll>
+    </ion-view>
+
+</html>

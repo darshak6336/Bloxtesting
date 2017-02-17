@@ -1,0 +1,113 @@
+<ion-view title="Blox" cache-view="false">
+    <ion-nav-buttons side="left">
+        <button ion-ripple menu-toggle="left" class="button button-icon icon ion-navicon"><span ng-show="notificationCount>0" class="badge badge-assertive" id="Menunotify">{{notificationCount}}</span> </button>
+        <!-- <button ="left" class="button button-icon ion-arrow-left-c"  ng-show="show1" ng-click="$ionicGoBack()"></button>-->
+        <!-- <button class="button back-button  buttons button-clear header-item" ng-click="$()" ng-show="show1">
+<i class="icon ion-arrow-left-c"></i></button>-->
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <!-- <button class=" button button-icon icon ion-android-notifications badge-container"><span class="badge badge-assertive">.</span></button>-->
+        <button ion-ripple class=" button button-icon icon ion-android-search" href="#/templates/search" ui-sref="search" ng-class="{hide:show1}"></button>
+        <!-- <button class=" button button-icon icon ion-android-share-alt" href="#/templates/share" ui-sref="app.share" ng-class="{hide:!show1}"></button>
+
+        <button class=" button button-icon icon ion-android-checkbox-outline" ng-click="click1($event)"></button> -->
+        <!--  <button class=" button button-icon icon ion-trash-b" ng-click="" ng-class="{hide:!show1}"></button>
+        <button class=" button button-icon icon ion-android-more-vertical"  ng-click="popover.show($event)" ng-class="{hide:show1}"></button> -->
+
+
+
+
+
+    </ion-nav-buttons>
+
+
+
+    <ion-content class="has-header" id="cont">
+        <div class="spinner" ng-show="loaded">
+            <ion-spinner icon="android"></ion-spinner>
+        </div>
+
+        <ion-refresher pulling-text="Pull to refresh..." on-refresh="getBloxData()"></ion-refresher>
+
+
+        <div  class="list" id="cardlist">
+
+
+            <li  ion-ripple ion-ripple-color="#3d3d3d" class="item" id="itemlist" ui-sref-active="active" ng-repeat="blox in bloxData">
+                <div   class="row">
+                    <!-- <div class="col-10" id="iconn" ui-sref="app.save"><i class = "icon icon ion-android-folder"></i></div> -->
+                    <div class="col-10" id="iconn" ng-click="goToFolder(blox)"><i class="icon icon ion-android-folder"></i></div>
+
+                    <div class="col col-70" id="col75" ng-click="goToFolder(blox)">
+                        <h2>{{blox.name}}</h2>
+                        <p> {{blox.modified}} </p>
+
+                        <!-- <p>owned by {{populateUsers(blox)}}</p> -->
+                        <!-- <p>owned by {{$index}}</p> -->
+                        <p>shared with {{blox.shared.length}} users</p>
+                    </div>
+                    <div class="col-10"><span class="badge badge-assertive" id="Bloxnotify">1</span></div>
+                    <div class="col-10"><i class="icon icon-right ion-android-arrow-dropdown-circle" ng-hide="show1" ng-click="showActionsheet($event,blox)"></i>
+                        <!--<ion-checkbox ng-model="item.checked" ng-repeat="item in devList" ng-checked="item.checked" ng-show="show1" id="chck-box"></ion-checkbox>-->
+                        <ion-checkbox id="chck-box" ng-show="show1"></ion-checkbox>
+                    </div>
+                </div>
+            </li>
+
+            <!--
+     <li class="item" id="itemlist">
+     <div class="row">
+       <div class="col-10" id="iconn" ui-sref="app.save"> <i class = "icon icon ion-android-folder"></i></div>
+       <div class="col col-75" id="col75" ui-sref="app.save">
+         <h2>Folder-blox2</h2>
+         <p>Shared with 3 users</p>
+       </div>
+       <div class="col-10"><i class = "icon icon-right ion-android-arrow-dropdown-circle" ng-hide="show1" ng-click="showActionsheet()"></i>
+         <ion-checkbox ng-repeat="item in deeList" ng-model="item.checked" ng-show="show1" id="chck-box" ></ion-checkbox>
+       </div>
+     </div>
+     </li> -->
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <!-- <div class="list" id="cardlist">
+
+     <li class="item" id="itemlist">
+     <div class="row">
+       <div class="col-10" id="iconn" ui-sref="app.save"> <i class = "icon icon ion-android-folder"></i></div>
+       <div class="col col-75" id="col75" ui-sref="app.save">
+         <h2>Folder-blox33</h2>
+         <p>Shared with 2 users</p>
+       </div>
+       <div class="col-10" ><i class="icon icon-right ion-android-arrow-dropdown-circle" ng-hide="show1" ng-click="showActionsheet()"></i>
+            <ion-checkbox ng-repeat="item in deeeList" ng-model="item.checked" ng-show="show1" id="chck-box"></ion-checkbox>
+       </div>
+     </div>
+     </li> </div> -->
+
+
+
+
+
+
+
+    </ion-content>
+    <button class="button button-float" ng-click="addBlox()"> <i class="icon ion-plus"></i> </button>
+</ion-view>
+
+<!-- <div class="float-button">
+ <span class="height-fix">
+     <a class="content">
+       <i class="ion-ios-arrow-up"> </i>
+     </a>
+   </span>
+</div>-->

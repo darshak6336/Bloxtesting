@@ -1,0 +1,103 @@
+<ion-view title="Applications">
+    <ion-nav-buttons side="left">
+        <button ion-ripple menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button ion-ripple class=" button button-icon icon ion-android-search" href="#/templates/search" ui-sref="search"></button>
+        <!--  <button class=" button button-icon icon ion-android-checkbox-outline" ng-click="click2($event)"></button>
+    <button class=" button button-icon icon ion-android-share-alt"  ng-click="($event)"></button>
+    <button class=" button button-icon icon ion-android-arrow-dropdown-circle"  ng-click="popover.show1($event)"></button>-->
+    </ion-nav-buttons>
+    <ion-content class="has-header" id="cont">
+        <div class="spinner" ng-show="loaded">
+            <ion-spinner icon="android"></ion-spinner>
+        </div>
+        <div class="list" id="cardlist">
+
+
+            <liion-ripple ion-ripple-color="#3d3d3d" class="item" id="itemlist" ng-repeat="file in appData">
+                <div class="row" ng-click="openBrowser(file)">
+                    <div class="col" id="iconnn"> <i class="icon  ion-ios-cloud"></i></div>
+                    <div class="col col-75" id="col76">
+                        <h2>{{file.name}}</h2>
+                        <p>A Blox Network Application</p>
+                    </div>
+                    <div class="col">
+                        <ion-checkbox ng-repeat="item in devvvList" ng-model="item.checked" ng-show="show1" id="chck-box"></ion-checkbox>
+                    </div>
+                </div>
+            </li>
+
+            <!-- <li class="item" id="itemlist" ng-click = "openBrowser()">
+                    <div class="row">
+                      <div class="col" id="iconnn"> <i class = "icon  ion-social-buffer-outline"></i></div>
+                      <div class="col col-75" id="col76">
+                        <h2>applications-blox1</h2>
+                        <p>Description...</p>
+                      </div>
+                      <div class="col">
+                        <ion-checkbox ng-repeat="item in devvvList" ng-model="item.checked" ng-show="show1" id="chck-box" ></ion-checkbox>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="item" id="itemlist" ng-click = "openBrowser()">
+                    <div class="row">
+                    <div class="col" id="iconn"> <i class = "icon  ion-social-twitch-outline"></i></div>
+                    <div class="col col-75" id="col76">
+                      <h2>applications-blox1</h2>
+                      <p>Description...</p>
+                    </div>
+                    <div class="col">
+                      <ion-checkbox ng-repeat="item in devvvList" ng-model="item.checked" ng-show="show1" id="chck-box" ></ion-checkbox>
+                    </div>
+                    </div>
+                  </li>
+
+                  <li class="item" id="itemlist" ng-click = "openBrowser()">
+                    <div class="row">
+                    <div class="col" id="iconn"> <i class = "icon  ion-social-reddit-outline"></i></div>
+                    <div class="col col-75" id="col76">
+                      <h2>applications-blox1</h2>
+                      <p>Description...</p>
+                    </div>
+                    <div class="col">
+                      <ion-checkbox ng-repeat="item in devvvList" ng-model="item.checked" ng-show="show1" id="chck-box" ></ion-checkbox>
+                    </div>
+                    </div>
+                  </li>
+
+                  <li class="item" id="itemlist" ng-click = "openBrowser()">
+                    <div class="row">
+                    <div class="col" id="iconn"> <i class = "icon  ion-social-snapchat-outline"></i></div>
+                    <div class="col col-75" id="col76">
+                      <h2>applications-blox1</h2>
+                      <p>Description...</p>
+                    </div>
+                    <div class="col">
+                      <ion-checkbox ng-repeat="item in devvvList" ng-model="item.checked" ng-show="show1" id="chck-box" ></ion-checkbox>
+                    </div>
+                    </div>
+                  </li>
+
+                  <li class="item" id="itemlist" ng-click = "openBrowser()">
+                    <div class="row">
+                    <div class="col" id="iconn"> <i class = "icon  ion-social-android-outline"></i></div>
+                    <div class="col col-75" id="col76">
+                      <h2>applications-blox1</h2>
+                      <p>Description...</p>
+                    </div>
+                    <div class="col">
+                      <ion-checkbox ng-repeat="item in devvvList" ng-model="item.checked" ng-show="show1" id="chck-box" ></ion-checkbox>
+                    </div>
+                    </div>
+
+                  </li> -->
+
+        </div>
+
+
+
+    </ion-content>
+    <!--<button class="button button-float" ng-click="showActionsheet()"> <i class="icon ion-upload"></i> </button> -->
+</ion-view>

@@ -1,0 +1,11 @@
+Camrera access permission:
+NOTE:-(install to git-shell)
+
+
+$ cordova plugin add https://github.com/Shoety/cordova-plugin-inappbrowserxwalk
+
+
+camera access popup
+NOTE:-(cordova.plugins.diagnostic)
+
+cordova plugin add cordova.plugins.diagnostic

@@ -1,0 +1,63 @@
+<ion-view title="Editprofile">
+
+
+  <ion-nav-buttons side="left">
+
+
+      <!--<button class="button back-button  buttons button-clear header-item" ui-sref="app.recent" id="backb">
+   <i class="icon ion-arrow-left-c"></i></button>-->
+
+
+      <button ion-ripple class=" button button-icon icon ion-arrow-left-c" ui-sref="app.profile"></button></ion-nav-buttons>
+
+
+
+  <ion-nav-buttons side="right">
+      <button ion-ripple class=" button button-icon" href="#/templates/search" ui-sref="app.profile">save</button>
+      </ion-nav-buttons>
+
+
+<ion-content>
+        <ion-scroll direction="y" class="theroot">
+
+
+
+            <div class="profileimage" ng-click="ShowEditprof()" >
+              <img src="img/avatar-2015-circle-260.png">
+          <i class="icon icon-right ion-camera" id="editicon"></i>
+
+            </div>
+
+            <form class="profileForm" name="registerForm" novalidate>
+
+                <p class="Pro-Fild">First name</p>
+                <input type="text" name="firstName" placeholder="" id="E-profile" ng-model="user.firstName" ng-minlength="1" required></label>
+                <!-- <p class="error">Enter First Name</p> -->
+
+                <p class="Pro-Fild">Last name</p>
+                <input type="text" name="lastName" placeholder="" id="E-profile"  ng-model="user.lastName" ng-minlength="1" required></label>
+                <!-- <p class="error">Enter Last Name</p> -->
+
+                <p class="Pro-Fild">Email</p>
+                <input type="email" name="email" placeholder="" id="E-profile" ng-model="user.email" ng-minlength="5" required></label>
+
+                <p class="Pro-Fild">Phone</p>
+                <input type="number" placeholder=""  id="E-profile" ng-model="user.phone" ng-minlength="10"></label>
+
+
+                <p class="Pro-Fild">Roll</p>
+                <input type="text"  placeholder="" id="E-profile" name="roll" ng-model="user.roll" required></label>
+
+                <p class="Pro-Fild">Biography</p>
+                <input type="textarea"  placeholder="" id="E-profile" name="Biography" ng-model="user.biography"></label>
+
+
+
+            </form>
+
+
+
+
+        </ion-scroll>
+        </ion-content>
+    </ion-view>

@@ -1,0 +1,892 @@
+body {
+    cursor: url('http://ionicframework.com/img/finger.png');
+}
+
+
+/*ion-content.scroll-content.ionic-scroll.overflow-scroll, ion-content.scroll-content.ionic-scroll {
+	overflow-y: auto;
+}*/
+
+p,
+a {
+    color: #fff;
+    font-size: 16px;
+}
+
+p.error {
+    text-align: right;
+    margin: 5px 5px 0px 0px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.form input[type="text"] {
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid #673c3c;
+    color: #fff !important;
+}
+
+.form input[type="email"] {
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid #673c3c;
+    color: #fff !important;
+}
+
+.form input[type="password"] {
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid #673c3c;
+    color: #fff !important;
+}
+
+span#_label-0,
+span#_label-1,
+span#_label-2,
+span#_label-3,
+span#_label-4,
+span#_label-5,
+span#_label-6,
+span#_label-7,
+span#_label-8,
+span#_label-9 {
+    color: #fff;
+}
+
+.form input[type="password"]:focus {
+    background: transparent;
+    border-bottom: 1px solid #fff;
+}
+
+.form input[type="text"]:focus {
+    background: transparent;
+    border-bottom: 1px solid #fff;
+}
+
+button.button.button-block.button-positive {
+    margin: auto;
+    float: none;
+    display: block;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+.theroot {
+    height: 100%;
+}
+
+.form {
+    width: 90%;
+    float: none;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.fullwidthsignup {
+    margin-bottom: 10%;
+}
+
+.listt {
+    /*margin-top:52px;*/
+}
+
+.images {
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 25%;
+}
+
+.screen-bg {
+    background: linear-gradient(to bottom right, #db4537, #744b5b) !important;
+}
+
+button.btn.btn-link {
+    background: transparent;
+    color: #fff;
+    border: none;
+}
+
+ion-content#sidemenu {
+    background: #fff !important;
+    border: none;
+    border-bottom: 1px solid #673c3c;
+    overflow-y: auto;
+    top: 140px !important;
+}
+
+ion-content
+/*scroll-content.ionic-scroll*/
+
+{
+    top: 140px;
+}
+
+a.item {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    background-color: transparent;
+    /*font-weight: 700;*/
+}
+
+.listt a.item {
+    font-weight: 900;
+}
+
+header.bar.bar-header.bar-stable {
+    height: 140px !important;
+    border-bottom: 1px solid #ddd;
+}
+
+header#ababab {
+    background-color: #fff;
+}
+
+ion-content#cont {
+    top: 60px;
+}
+
+
+/* bar-header width and text-align:center icon */
+
+.bar-stable.bar.bar-header {
+    background: #DA4436;
+    height: 60px;
+}
+
+.bar.bar-stable .title {
+    color: #fff;
+}
+
+.bar .title {
+    position: initial;
+    height: auto;
+    padding: 2px 0px 0px 0px;
+    /*	 height: 60px;
+		vertical-align:middle;*/
+}
+
+.bar-stable .button {
+    color: #fff;
+}
+
+.buttons.buttons-right div#btn-ri8 {
+    /*padding-top:5px;*/
+}
+
+button.button.icon.ion-gear-a {
+    background-color: transparent;
+    color: #7b8994;
+    border: none;
+    padding-right: 0px;
+}
+
+a.item.item-icon-left {
+    color: #3d464d;
+}
+
+i.icon.ion-archive,
+i.icon.ion-image,
+i.icon.ion-ios-folder,
+i.icon.ion-ios-clock-outline,
+i.icon.ion-android-notifications,
+i.ion-upload,
+icon,
+i.ion-document-text,
+i.ion-camera {
+    opacity: 0.8;
+}
+
+
+/*i.icon{
+	color:gray;}
+*/
+
+.item.active {
+    color: #DA4436 !important;
+    background-color: #f5f5f5;
+}
+
+a#itemlist {
+    padding: 0px 10px 0px 10px;
+}
+
+div#cardlist {
+    margin-bottom: 0px;
+}
+
+#cardlist i.icon
+/*.icon.ion-document, .ion-images, .ion-android-folder, .ion-social-github-outline */
+
+{
+    font-size: 25px;
+    color: gray;
+    float: left;
+}
+
+#cardlist i.ion-android-arrow-dropdown-circle {
+    font-size: 24px;
+    padding: 0 15px;
+}
+
+#cardlist i.ion-android-download {
+    font-size: 24px;
+    padding: 0 15px;
+}
+
+i.icon.icon-right.ion-android-arrow-dropdown-circle {
+    color: gray;
+    float: right;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+i.icon.icon-right.ion-android-download {
+    color: gray;
+    float: right;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.col p {
+    color: gray;
+}
+
+.button-float {
+    background: #DA4436 !important;
+    color: white !important;
+    z-index: 12 !important;
+    position: absolute !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    min-height: 50px;
+    border-radius: 50% !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26) !important;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+    -webkit-transition: 0.2s linear !important;
+    transition: 0.2s linear !important;
+    -webkit-transition-property: -webkit-transform, all !important;
+    transition-property: transform, all !important;
+}
+
+.button-float:hover {
+    -webkit-transform: translate3d(0, -1px, 0) !important;
+    transform: translate3d(0, -1px, 0) !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4) !important;
+    background: darken(#DA4436, 10%) !important;
+}
+
+button#backb {
+    border: none;
+    font-size: 25px;
+    padding: 0 10px 0 5px;
+    background-color: transparent;
+}
+
+button#backb:hover {
+    color: #444;
+    text-decoration: none;
+}
+
+button.button.back-button.buttons.button-clear.header-item {
+    color: #fff;
+}
+
+
+/*Profile seting  {immage and email and name}*/
+
+img#imgg {
+    margin-bottom: 14%;
+    width: 27%;
+}
+
+h5#h52 {
+    margin: 0px 0 3px 0;
+}
+
+h6#h62 {
+    margin: 0px;
+    color: #666666;
+}
+
+.cont {
+    width: 70%;
+}
+
+.maincont {
+    padding: 10px !important;
+    margin-top: 0px !important;
+}
+
+img#imag {
+    width: 50%;
+    margin: auto;
+    display: block;
+    float: none;
+    margin-top: 30%;
+}
+
+.row {
+    padding: 5px;
+}
+
+img#immagggg {
+    width: 100%;
+    margin-top: 6px;
+}
+
+div#iconn {
+    padding: 14px 0px 0px 5px;
+}
+
+div#iconnn {
+    padding: 14px 0px 0px 5px;
+}
+
+div#col75 {
+    padding-left: 20px;
+}
+
+div#col76 {
+    padding-left: 15px;
+}
+
+#cardlist h2 {
+    font-weight: 600;
+}
+
+
+/*-------popup---------*/
+
+.popup-container .popup {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.popup-head {
+    text-align: left;
+    border: none;
+}
+
+.popup-body input {
+    border-bottom: 1px solid #DA4436 !important;
+    color: #242424;
+}
+
+
+/*icon size */
+
+.listt .ion-ios-clock-outline,
+.icon.ion-ios-folder,
+.icon.ion-image,
+.icon.ion-archive,
+.icon.ion-android-notifications,
+.icon.ion-minus-circled {
+    font-size: 25px;
+}
+
+
+/* back button*/
+
+span.previous-title {
+    display: none !important;
+}
+
+pseudo:before {
+    font-size: 26px;
+}
+
+
+/*search and navicon icon fonr size set to css*/
+
+.bar .button.button-icon:before {
+    font-size: 26px!important;
+}
+
+
+/*popover css top 0px*/
+
+.popover-list .item {
+    padding: 10px !important;
+    border: none;
+}
+
+ion-popover-view#popover-cont {
+    height: 15% !important;
+}
+
+ion-content#popover-top-list {
+    top: 0px !important;
+}
+
+
+/*check box on click event in button in header */
+
+input#chck-box {
+    float: right;
+    font-size: 18px;
+    margin-top: 13px;
+}
+
+#chck-box {
+    border: none;
+    background-color: transparent;
+    float: right;
+    font-size: 18px;
+    margin-top: 6px;
+    padding-left: 28px;
+}
+
+
+/*upload ionicActionSheet scc */
+
+button.button.action-sheet-option.ng-binding {
+    color: #3d464d;
+}
+
+li#itemlist {
+    padding: 0px 10px 0px 10px;
+}
+
+li.item {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    background-color:  transparent;
+}
+
+.tabs-top>.tabs {
+    top: 60px;
+}
+
+a#tabs1 {
+    border-right: 1px solid #ddd !important;
+    max-width: 100%;
+}
+
+ion-content#cont1 {
+    top: 61px;
+}
+
+#notif i.icon {
+    font-size: 30px;
+    color: gray;
+}
+
+#notif .col-10 {
+    padding: 5px 14px 0 14px;
+    margin-right: 18px;
+}
+
+#notif .col-90 {
+    border-bottom: 1px solid #ddd;
+}
+
+
+/*profilrs css*/
+
+img#prof {
+    width: 40px;
+    vertical-align: bottom;
+}
+
+div#colprof h2 {
+    font-weight: 600;
+}
+
+div#pro {
+    display: block;
+    float: none;
+    margin: auto;
+}
+
+#pro-email h2 {
+    color: gray;
+}
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+/*share page css*/
+
+.list-share {
+    width: 90%;
+    float: none;
+    margin: auto;
+}
+
+#message {
+    padding: 14px 0 0 0px;
+    border: none;
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid #ddd;
+    color: #242424 !important;
+}
+
+#Token .item {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ddd;
+}
+
+#message input[type="text"] {
+    padding-top: 0px;
+}
+
+li#itemlist1 {
+    border: none;
+}
+
+li#itemlist2 {
+    border-bottom: 1px solid #ddd;
+}
+
+#link1 i.icon.ion-link {
+    background-color: #ddd;
+    position: relative;
+    display: block;
+    margin: auto;
+    float: none;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    width: 45px;
+    /* 60*/
+    height: 45px;
+    font-size: 20px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+div#col7 {
+    display: block;
+    margin: auto;
+    float: none;
+}
+
+li#itemlist10 {
+    border: none;
+    padding: 5px 0 0px 16px;
+}
+
+li#itemlist3 {
+    border: none;
+    padding: 10px 0 0px 16px;
+}
+
+#link2 p {
+    background-color: transparent;
+    position: relative;
+    display: block;
+    margin: auto;
+    float: none;
+    color: red;
+    text-align: center;
+    padding: 11px;
+    width: 45px;
+    /* 60*/
+    height: 45px;
+    font-size: 14px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #DA4436;
+}
+
+ion-content#contshare {
+    top: 60px;
+    overflow-y: scroll;
+}
+
+
+/*member page css*/
+
+div#membr {
+    text-align: center;
+    font-size: 32px;
+    color: #3d464d;
+}
+
+li#mbrinfo {
+    border: none;
+    padding: 5px 16px 0 16px
+}
+
+
+/*button hover color */
+
+.bar-stable .button:hover {
+    color: #FFF !important;
+}
+
+.button-icon.button.activated {
+    opacity: 1;
+}
+
+
+/*text area for device token */
+
+textarea#tokenarea {
+    height: 80px !important;
+}
+
+textarea#Aaatoken {
+    height: 80px !important;
+}
+
+button#btn {
+    background: #DA4436;
+    color: #fff;
+    float: right;
+    margin: 10px 5px;
+    width: 50%;
+}
+
+div.spinner {
+    margin: auto;
+    margin-top: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 85px;
+    text-align: center;
+}
+
+.spinner svg {
+    width: 19%;
+    height: 85px;
+}
+
+div#Cancle {
+    display: block;
+    float: none;
+    margin: auto;
+}
+
+#Cancle .icon-right.ion-close-round {
+    float: none;
+}
+
+.badge-container span.badge {
+    display: inline-flex;
+    background-color: #15a7fd;
+    padding: 1px 6px;
+    font-size: 10px;
+    top: -6px;
+    margin-left: -10px;
+}
+
+span#notify {
+    background-color: #ef473a;
+    color: #fff;
+    display: block;
+    margin: auto;
+    float: none;
+    padding: 2px 2px 2px 2px;
+    width: auto;
+    min-width: 21px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+span#Bloxnotify {
+    background-color: #ef473a;
+    color: #fff;
+    display: block;
+    margin: auto;
+    float: none;
+    padding: 2px 2px 2px 2px;
+    width: auto;
+    min-width: 21px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+    right: initial;
+}
+
+span#Menunotify {
+    background-color: #fff;
+    color: #ef473a;
+    float: right;
+    padding: 2px 2px 2px 2px;
+    width: auto;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    top: -3px;
+    right: 5px;
+    text-align: center;
+}
+
+h2.wrapfn {
+    width: 10em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div#spinner {
+    display: block;
+    float: none;
+    margin: auto;
+    padding-top: 12px;
+}
+
+ion-spinner.filespin.spinner.spinner-spiral svg {
+    width: 25px;
+    height: 25px;
+    stroke: #444;
+    fill: #444;
+}
+
+
+/*loading css for login*/
+
+li#itemlist:focus {
+    background: #D9D9D9;
+}
+
+li#itemlist:hover {
+    background: #D9D9D9;
+}
+
+div#notif:focus {
+    background: #D9D9D9;
+}
+
+div#notif:hover {
+    background: #D9D9D9;
+}
+
+.loading-container .loading {
+    padding: 0px;
+    width: 33%;
+}
+
+.spinner svg {
+    width: 29%;
+    height: 85px;
+}
+
+
+/*profile edit button*/
+button.button.button-block.button-positive.profile{
+  background-color: #387ef5;
+
+}
+.profileForm{
+  width: 90%;
+float: none;
+margin: auto;
+margin-top: 0px;
+margin-bottom: 25px;
+margin-top: 25px;
+}
+
+input#E-profile:focus{
+  border-bottom: 1px solid #DA4436 !important;
+}
+input#E-profile{
+  width: 100%;
+  border-bottom: 1px solid #3d3d3d !important;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.profileimage{
+
+  float: none;
+position: relative;
+margin: auto;
+display: block;
+    margin-top: 20px;
+
+}
+.profileimage img{
+display: block;
+margin: auto;
+
+}
+
+.profileimage i {
+  position: absolute;
+   top: calc(35% - 10px);
+   left: calc(45% - 5px);
+   font-size: 65px;
+   color: DA4436;
+}
+i#editicon{
+color: #ffffff;
+opacity: 0.5;
+
+}
+p.Pro-Fild{
+display: table;
+padding:  0px;
+max-width: 200px;
+width: 35%;
+color: #444;
+font-size: 16px;
+margin: 0px;
+}
+
+/*css for notif template*/
+div#Clearnotify{
+  display: block;
+  margin: auto;
+  float: none;
+}
+button#clearBtn{
+    width: 100%;
+    border: none;
+    text-align: right;
+    padding-right: 10px;
+}
+h4.title{
+margin-left: 10px;
+}
+div#ckeckedlist {
+    display: block;
+    margin: auto;
+    float: none;
+  }
+  label#Allckeck {
+      border: none;
+          background: transparent;
+  }
+
+div#notify {
+    background-color: #ddd;
+}
+label#checkList {
+    background: transparent;
+    border: none;
+    padding-left: 35px;
+}
+.text_type_bold{
+    font-style:none;
+ font-weight:bold;
+}

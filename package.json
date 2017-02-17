@@ -1,0 +1,57 @@
+{
+  "name": "app",
+  "version": "1.1.1",
+  "description": "app: An Ionic project",
+  "dependencies": {
+    "cca": "^0.8.1",
+    "cordova": "^6.5.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^2.1.0",
+    "grunt-usemin": "^3.1.1",
+    "gulp": "^3.5.6",
+    "gulp-concat": "^2.2.0",
+    "gulp-minify-css": "^0.3.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^2.0.4"
+  },
+  "devDependencies": {
+    "bower": "^1.3.3",
+    "grunt": "^1.0.1",
+    "grunt-cordovacli": "^1.0.1",
+    "gulp-util": "^2.2.14",
+    "shelljs": "^0.3.0"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-whitelist",
+    "cordova-plugin-console",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-device",
+    "cordova-plugin-splashscreen",
+    "ionic-plugin-keyboard",
+    "cordova-plugin-file-transfer",
+    "cordova-plugin-inappbrowser",
+    "cordova-plugin-network-information",
+    {
+      "locator": "http://github.com/don/cordova-filechooser.git",
+      "id": "com.megster.cordova.FileChooser"
+    },
+    "cordova-plugin-media-capture",
+    "cordova.plugins.diagnostic",
+    {
+      "locator": "https://github.com/jcesarmobile/FilePicker-Phonegap-iOS-Plugin.git",
+      "id": "com.jcesarmobile.filepicker"
+    },
+    "android-camera-permission",
+    "cordova-plugin-filepath"
+  ],
+  "cordovaPlatforms": [
+    "ios",
+    {
+      "platform": "android",
+      "version": "latest",
+      "locator": "android@latest"
+    }
+  ]
+}

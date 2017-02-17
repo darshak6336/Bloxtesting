@@ -1,0 +1,126 @@
+<ion-view title="Profile">
+    <ion-nav-buttons side="left">
+
+
+        <!--<button class="button back-button  buttons button-clear header-item" ui-sref="app.recent" id="backb">
+<i class="icon ion-arrow-left-c"></i></button>-->
+
+
+        <button ion-ripple class=" button button-icon icon ion-arrow-left-c" ui-sref="app.blox"></button></ion-nav-buttons>
+
+    <!-- <ion-nav-buttons side="right"> </ion-nav-buttons>-->
+
+
+
+    <ion-content class="has-header" id="cont">
+
+
+
+        <div class="list" id="cardlist">
+
+
+            <li class="item" id="itemlist">
+                <div class="row" ng-click="">
+
+                    <div class="col" id="pro">
+                        <h3>Account photo</h3>
+                    </div>
+                    <div class=""><img src="img/avatar-2015-circle-260.png" id="prof"></div>
+                </div>
+
+            </li>
+
+            <li class="item" id="itemlist">
+                     <div class="row">
+
+                         <div class="col" id="pro-email">
+                          <h2>First Name</h2>
+                          <p>{{user.firstName}}Puneet</p>
+                       </div>
+                    </div>
+
+             </li>
+
+             <li class="item" id="itemlist">
+                 <div class="row">
+
+                     <div class="col" id="pro-email">
+                     <h2>Last Name</h2>
+                     <p>{{user.lastName}}Tiwari</p>
+                 </div>
+             </div>
+         </li>
+
+         <li class="item" id="itemlist">
+               <div class="row">
+
+                 <div class="col" id="pro-email">
+                  <h2>Phone</h2>
+                  <p>{{user.phone}}1234567890</p>
+              </div>
+          </div>
+      </li>
+
+              <li class="item" id="itemlist">
+                   <div class="row">
+
+                      <div class="col" id="pro-email">
+                        <h2>Email</h2>
+                        <p>{{user.email}}</p>
+                    </div>
+                </div>
+
+            </li>
+
+            <li class="item" id="itemlist">
+             <div class="row">
+
+                 <div class="col" id="pro-email">
+                     <h2>Roll</h2>
+                     <p>{{user.rolle}}Roll of profile</p>
+                 </div>
+             </div>
+
+         </li>
+
+         <li class="item" id="itemlist">
+                           <div class="row">
+
+                               <div class="col" id="pro-email">
+                                   <h2>Biography</h2>
+                                     <p>{{user.Biography}}Biography</p>
+
+                               </div>
+                           </div>
+
+                       </li>
+
+            <li class="item" id="itemlist">
+                <div class="row">
+
+                    <div class="col" id="pro-email">
+                        <h2>Space used</h2>
+                        <p>63.3% of 6 GB</p>
+                    </div>
+                </div>
+
+            </li>
+
+        </div>
+
+
+                <button ion-ripple class="button button-block button-positive profile" ui-sref="app.editprofile">
+                  Edit Profile
+                </button>
+
+    </ion-content>
+
+</ion-view>
+
+<!-- <div class="float-button">
+ <span class="height-fix">
+     <a class="content">
+       <i class="ion-ios-arrow-up"> </i>
+     </a>
+   </span>
+</div>-->

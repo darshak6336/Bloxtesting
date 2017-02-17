@@ -1,0 +1,37 @@
+<ion-side-menus>
+    <ion-pane ion-side-menu-content>
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button class="button-clear"><i class="icon "></i></ion-nav-back-button>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+    </ion-pane>
+    <ion-side-menu side="left">
+        <header class="bar bar-header bar-stable" id="ababab">
+            <div class="maincont" style="width:100%;">
+                <button class="button icon ion-gear-a" style="float:right; height:34px; margin-right:0px;" ui-sref="app.profile" menu-close></button>
+                <div class="cont" style="float:left; font-size:12px;  bottom:0px;"> <img src="img/avatar-2015-circle-260.png" id="imgg" ui-sref="app.profile" menu-close>
+                    <h5 id="h52">{{user.email}}</h5>
+                    <h6 id="h62">tap on the settings to view your profile</h6>
+                </div>
+            </div>
+        </header>
+        <ion-content class="has-header" id="sidemenu">
+            <div class="listt">
+                <!-- <a class="item item-icon-left menu-close" href="#/app/demo" ng-class="{active:item}"> <i class="icon ion-ios-clock-outline"></i> Recent </a>
+        <a class="item item-icon-left menu-close" href="#/app/login"  ng-class="{active:item}" > <i class="icon ion-ios-folder"></i> Files </a>
+        <a class="item item-icon-left menu-close" href="#/app/signup" ng-class="{active:item}"> <i class="icon ion-image"></i> Photos </a>
+        <a class="item item-icon-left menu-close" href="#/app/login" ng-class="{active:item}"> <i class="icon ion-archive"></i> Offline Files </a>
+        <a class="item item-icon-left menu-close" href="#/app/demo" ng-class="{active:item}"> <i class="icon ion-android-notifications"></i> Notification </a>-->
+                <!-- <a ui-sref="app.recent" ui-sref-active="active" class="item item-icon-left" menu-close > <i class="icon ion-ios-clock-outline"></i> Recent </a> -->
+                <a ui-sref="app.blox" ui-sref-active="active" class="item item-icon-left" menu-close> <i class="icon ion-ios-folder"></i> Blox </a>
+                <a ui-sref="app.application" ui-sref-active="active" class="item item-icon-left" menu-close> <i class="icon ion-image"></i> Applications </a>
+                <!-- <a ui-sref="app.offline-files" ui-sref-active="active" class="item item-icon-left" menu-close> <i class="icon ion-archive"></i> Offline Files </a>-->
+                <a  ng-click="clickNotification()" ui-sref-active="active" class="item item-icon-left" menu-close> <i class="icon ion-android-notifications"></i><span ng-show="notificationCount>0" class="badge badge-assertive" id="notify">{{notificationCount}}</span> Notifications </a>
+                <!-- <a ui-sref="app.notif" ui-sref-active="active" class="item item-icon-left" menu-close> <i class="icon ion-android-notifications"></i><span class="badge badge-assertive" id="notify">{{notificationCount}}</span> Notification </a> -->
+                <a ng-show="showLogout" ng-click='logout()' ui-sref-active="active" class="item item-icon-left" menu-close> <i class="icon ion-minus-circled"></i> Logout </a>
+
+            </div>
+
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

@@ -1,0 +1,90 @@
+<ion-view title="Notifications">
+    <ion-nav-buttons side="left">
+        <button ion-ripple menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+
+                 <ion-toggle ng-change="toggleChange()" ng-model="groupByBlox" class="button button-icon icon" toggle-class="toggle">
+       <span style=" margin-right: 77px; margin-top: 8px;">Edit</span>
+          </ion-toggle>
+
+          <!-- <button ng-show="selectedNotifications.length>0" class=" button button-icon icon ion-trash-b" ng-click="" ng-class="" ></button> -->
+          <button ng-show="selectedNotifications.length>0" class=" button button-icon icon ion-android-mail" ng-click="markAsRead(null)" ng-class="" ></button>
+          <!-- <ion-checkbox id="checkList" ng-model="selectedAll" ng-click="checkAll()"></ion-checkbox> -->
+
+
+    </ion-nav-buttons>
+    <ion-content class="has-header" id="cont">
+        <ion-refresher pulling-text="Pull to refresh..." on-refresh="getNotifications()">
+
+        </ion-refresher>
+        <div class="spinner" ng-show="loaded">
+            <ion-spinner icon="android"></ion-spinner>
+        </div>
+         <div>
+        <div ion-ripple ion-ripple-color="#3d3d3d" class="row" id="notify" ui-sref-active="active">
+            <div class="col-75" id="NotifyTitle"><h4 class="title">Latest Notifications</h4></div>
+              <!-- <div class="col-10">           <button class=" button button-icon icon ion-trash-b"></button></div> -->
+                <!-- <div class="col-15" id="ckeckedlist"><ion-checkbox  id="Allckeck" ng-model="notifications.Selected" ></ion-checkbox></div> -->
+
+        </div>
+
+
+        <div ion-ripple ion-ripple-color="#3d3d3d" class="row" id="notif" ui-sref-active="active"
+         ng-repeat="notifications in allNotifications" ng-click="openNotifications(notifications)">
+
+            <div ng-click="deleteNotification(notifications,$event)" ng-if="!notifications.read && groupByBlox" ng-show="notifications.Selected" class="col-10">
+              <i  class="icon ion-trash-b" style="color: rgb(218, 68, 54);"></i>
+            </div>
+            <div ng-if="!notifications.read"  ng-show="!notifications.Selected"class="col-10">
+              <i class="icon ion-android-notifications"></i>
+            </div>
+
+            <div ng-if="!notifications.read" class="col col-63 " >
+              <a style="font-weight:bold; color:black">{{notifications.description}}</a>
+                <br>
+                <p >{{notifications.created}}</p>
+            </div>
+              <div ng-if="!notifications.read && groupByBlox" class="col-17" id="ckeckedlist">
+                <ion-checkbox  id="Allckeck" ng-model="notifications.Selected" ng-click="selectNotif(notifications,$event)">
+                </ion-checkbox></div>
+        </div>
+
+       </div>
+      <div>
+      <div ion-ripple ion-ripple-color="#3d3d3d" class="row" id="notify" ui-sref-active="active">
+          <div class="col-75" id="NotifyTitle"><h4 class="title">Past Notifications</h4></div>
+            <!-- <div class="col-10">           <button class=" button button-icon icon ion-trash-b"></button></div> -->
+              <!-- <div class="col-15" id="ckeckedlist"><ion-checkbox  id="Allckeck" ng-model="notifications.Selected" ></ion-checkbox></div> -->
+
+      </div>
+
+
+      <div ion-ripple ion-ripple-color="#3d3d3d" class="row" id="notif" ui-sref-active="active"
+       ng-repeat="notifications in allNotifications" ng-click="openNotifications(notifications)">
+
+          <div ng-click="remove(notifications,$event)" ng-if="notifications.read && groupByBlox" ng-show="notifications.Selected" class="col-10">
+            <i  class="icon ion-trash-b" style="color: rgb(218, 68, 54);"></i>
+          </div>
+          <div ng-if="notifications.read"  ng-show="!notifications.Selected"class="col-10">
+            <i class="icon ion-android-notifications"></i>
+          </div>
+
+          <div ng-if="notifications.read" class="col col-63 ">{{notifications.description}}
+              <br>
+              <p>{{notifications.created}}</p>
+          </div>
+            <div ng-if="notifications.read && groupByBlox" class="col-17" id="ckeckedlist">
+              <ion-checkbox  id="Allckeck" ng-model="notifications.Selected" ng-click="selectNotif(notifications,$event)">
+              </ion-checkbox></div>
+      </div>
+
+
+
+
+
+
+
+    </ion-content>
+</ion-view>

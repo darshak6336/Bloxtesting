@@ -1,0 +1,560 @@
+  <ion-view title="Share">
+
+
+<ion-nav-buttons side="left">
+
+   <button class=" button button-icon icon ion-arrow-left-c" ng-click="$ionicGoBack()" ></button>
+
+
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <button class=" button button-icon icon ion-android-send" ng-click="click(notif)" ></button>
+
+
+
+
+  </ion-nav-buttons>
+
+  <ion-content class="has-header" id="contshare">
+<div class="list-share">
+
+       <tags-input ng-model="tags" add-on-paste="true">
+      <auto-complete source="loadTags($query)"></auto-complete>
+    </tags-input>
+
+
+
+  <label class="item1 item-input" id="message">
+    <input type="text" placeholder="Message (optional)">
+  </label>
+
+
+
+
+</div>
+
+<!--<div class="list" id="Token">
+
+  <div class="item item-input-inset">
+    <label class="item-input-wrapper" id="labl" style="margin-left: 9px;}">
+      <input type="text" placeholder="Add Token" ng-model="Tokenn">
+    </label>
+    <button class="button button-small" id="btn" style="background:#DA4436; color:#fff;" ng-click='add(Tokenn)'>
+      Submit
+    </button>
+  </div>
+
+</div>-->
+
+
+<div class="row" style="padding:0px;">
+      <div class="col" style="padding:0px;">
+        <label class="item item-input text">
+          <textarea placeholder="Add Your Token " rows="1" ng-model="Tokenn" id="Aaatoken"></textarea>
+        </label>
+         <button class="button button-full" id="btn" style="background:#DA4436; color:#fff; float:right; margin:10px 5px; width:50%;" ng-click='add(Tokenn)'>
+      Submit
+    </button>
+      </div>
+      </div>
+
+<!--
+<div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label" style="color:#242424;">Token</span>
+    <input type="text"  ng-model="Tokenvalue">
+  </label>
+
+</div>
+-->
+
+ <div class="row">
+      <div class="col">
+        <label class="item item-input text">
+          <textarea placeholder="Your Device Token" rows="1" ng-model="Tokenvalue" id="tokenarea"></textarea>
+        </label>
+
+      </div>
+      </div>
+  <!--
+<textarea ng-model="Tokenvalue" placeholder="Your Device Token">
+	</textarea>-->
+
+
+
+      <li class="item"  id="itemlist1">
+      <div class="row">
+        <div class="col" id="col76">
+          <h2><b>File-blox1</b></h2>
+          <p>9.2 MB, modified 10 months ago</p>
+        </div>
+
+        </div>
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist2">
+      <div class="row">
+        <div class="col col-20" id="link1"><i class = "icon ion-link"></i></div>
+        <div class="col col-50" id="col7">
+          <h2>No link created yet</h2>
+
+        </div>
+     <div class="col col-30" id="col7"><p style="color:#DA4436;" href="#">Create a link</p></div>
+      </div>
+      </li>
+
+
+
+
+
+
+
+
+
+
+       <ion-scroll direction="y" class="theroot" style="height:600px;">
+
+      <li class="item"  id="itemlist10">
+      <div class="row">
+        <div class="col" id="col76">
+
+          <p style="color:#da4436;">Members - 2</p>
+        </div>
+
+        </div>
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.member">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>PT</p></div>
+        <div class="col col-80" id="col76">
+          <h2>Punnet Tiwari</h2>
+          <p>Can edit</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.member">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>as</p></div>
+        <div class="col col-80" id="col76">
+          <h2>adam smith</h2>
+          <p>Owner</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.member">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>AS</p></div>
+        <div class="col col-80" id="col76">
+          <h2>Adam Smith</h2>
+          <p>Owner</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.save">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>pt</p></div>
+        <div class="col col-80" id="col76">
+          <h2>punit tiwari</h2>
+          <p>Can edit</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.member">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>AS</p></div>
+        <div class="col col-80" id="col76">
+          <h2>Adam Smith</h2>
+          <p>Owner</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.save">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>pt</p></div>
+        <div class="col col-80" id="col76">
+          <h2>punit tiwari</h2>
+          <p>Can edit</p>
+
+        </div>
+
+      </div>
+      </li>
+
+
+      <li class="item"  id="itemlist3" ui-sref="app.member">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>AS</p></div>
+        <div class="col col-80" id="col76">
+          <h2>Adam Smith</h2>
+          <p>Owner</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.save">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>pt</p></div>
+        <div class="col col-80" id="col76">
+          <h2>punit tiwari</h2>
+          <p>Can edit</p>
+
+        </div>
+
+      </div>
+      </li>
+
+
+      <li class="item"  id="itemlist3" ui-sref="app.member">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>AS</p></div>
+        <div class="col col-80" id="col76">
+          <h2>Adam Smith</h2>
+          <p>Owner</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.save">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>pt</p></div>
+        <div class="col col-80" id="col76">
+          <h2>punit tiwari</h2>
+          <p>Can edit</p>
+
+        </div>
+
+      </div>
+      </li>
+
+
+  <li class="item"  id="itemlist3" ui-sref="app.member">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>AS</p></div>
+        <div class="col col-80" id="col76">
+          <h2>Adam Smith</h2>
+          <p>Owner</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.save">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>pt</p></div>
+        <div class="col col-80" id="col76">
+          <h2>punit tiwari</h2>
+          <p>Can edit</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.member">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>AS</p></div>
+        <div class="col col-80" id="col76">
+          <h2>Adam Smith</h2>
+          <p>Owner</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.save">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>pt</p></div>
+        <div class="col col-80" id="col76">
+          <h2>punit tiwari</h2>
+          <p>Can edit</p>
+
+        </div>
+
+      </div>
+      </li>
+
+
+      <li class="item"  id="itemlist3" ui-sref="app.member">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>AS</p></div>
+        <div class="col col-80" id="col76">
+          <h2>Adam Smith</h2>
+          <p>Owner</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.save">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>pt</p></div>
+        <div class="col col-80" id="col76">
+          <h2>punit tiwari</h2>
+          <p>Can edit</p>
+
+        </div>
+
+      </div>
+      </li>
+
+
+      <li class="item"  id="itemlist3" ui-sref="app.member">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>AS</p></div>
+        <div class="col col-80" id="col76">
+          <h2>Adam Smith</h2>
+          <p>Owner</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.save">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>pt</p></div>
+        <div class="col col-80" id="col76">
+          <h2>punit tiwari</h2>
+          <p>Can edit</p>
+
+        </div>
+
+      </div>
+      </li>
+
+       <li class="item"  id="itemlist3" ui-sref="app.member">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>AS</p></div>
+        <div class="col col-80" id="col76">
+          <h2>Adam Smith</h2>
+          <p>Owner</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.save">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>pt</p></div>
+        <div class="col col-80" id="col76">
+          <h2>punit tiwari</h2>
+          <p>Can edit</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.member">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>AS</p></div>
+        <div class="col col-80" id="col76">
+          <h2>Adam Smith</h2>
+          <p>Owner</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.save">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>pt</p></div>
+        <div class="col col-80" id="col76">
+          <h2>punit tiwari</h2>
+          <p>Can edit</p>
+
+        </div>
+
+      </div>
+      </li>
+
+
+      <li class="item"  id="itemlist3" ui-sref="app.member">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>AS</p></div>
+        <div class="col col-80" id="col76">
+          <h2>Adam Smith</h2>
+          <p>Owner</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.save">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>pt</p></div>
+        <div class="col col-80" id="col76">
+          <h2>punit tiwari</h2>
+          <p>Can edit</p>
+
+        </div>
+
+      </div>
+      </li>
+
+
+      <li class="item"  id="itemlist3" ui-sref="app.member">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>AS</p></div>
+        <div class="col col-80" id="col76">
+          <h2>Adam Smith</h2>
+          <p>Owner</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.save">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>pt</p></div>
+        <div class="col col-80" id="col76">
+          <h2>punit tiwari</h2>
+          <p>Can edit</p>
+
+        </div>
+
+      </div>
+      </li>
+
+       <li class="item"  id="itemlist3" ui-sref="app.member">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>AS</p></div>
+        <div class="col col-80" id="col76">
+          <h2>Adam Smith</h2>
+          <p>Owner</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.save">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>pt</p></div>
+        <div class="col col-80" id="col76">
+          <h2>punit tiwari</h2>
+          <p>Can edit</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.member">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>AS</p></div>
+        <div class="col col-80" id="col76">
+          <h2>Adam Smith</h2>
+          <p>Owner</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.save">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>pt</p></div>
+        <div class="col col-80" id="col76">
+          <h2>punit tiwari</h2>
+          <p>Can edit</p>
+
+        </div>
+
+      </div>
+      </li>
+
+
+      <li class="item"  id="itemlist3" ui-sref="app.member">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>AS</p></div>
+        <div class="col col-80" id="col76">
+          <h2>Adam Smith</h2>
+          <p>Owner</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.save">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>pt</p></div>
+        <div class="col col-80" id="col76">
+          <h2>punit tiwari</h2>
+          <p>Can edit</p>
+
+        </div>
+
+      </div>
+      </li>
+
+
+      <li class="item"  id="itemlist3" ui-sref="app.member">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>AS</p></div>
+        <div class="col col-80" id="col76">
+          <h2>Adam Smith</h2>
+          <p>Owner</p>
+
+        </div>
+
+      </div>
+      </li>
+
+      <li class="item"  id="itemlist3" ui-sref="app.save">
+      <div class="row">
+        <div class="col col-20" id="link2"><p>pt</p></div>
+        <div class="col col-80" id="col76">
+          <h2>punit tiwari</h2>
+          <p>Can edit</p>
+
+        </div>
+
+      </div>
+      </li>
+
+
+      </ion-scroll>
+
+  </ion-content>
+
+</ion-view>
+
+<!-- <div class="float-button">
+	<span class="height-fix">
+	  	<a class="content">
+	    	<i class="ion-ios-arrow-up"> </i>
+	   	</a>
+	  </span>
+</div>-->
